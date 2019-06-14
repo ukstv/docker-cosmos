@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  cosmos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      MONIKER: stakeboard
