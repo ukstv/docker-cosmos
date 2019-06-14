@@ -4,7 +4,7 @@ set -x
 
 : ${GAIA_HOME:=/root/.gaiad}
 
-if [[ ! -d ${GAIA_HOME} ]]; then
+if [[ ! -d ${GAIA_HOME}/config ]]; then
   gaiad init $MONIKER --home $GAIA_HOME
 fi
 

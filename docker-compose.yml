@@ -5,5 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - ./data:/root/.gaiad/data
     environment:
       MONIKER: stakeboard
